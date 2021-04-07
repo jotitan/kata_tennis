@@ -14,9 +14,12 @@ class Tennis {
 		}
 		return "";
 	}
-	
+
 	public firstPlayerWinPoint(){
 		this.scorePlayer1++;
+	}
+	public secondPlayerWinPoint(){
+		this.scorePlayer2++;
 	}
 	
     

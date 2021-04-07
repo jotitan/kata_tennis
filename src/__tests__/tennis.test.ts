@@ -16,4 +16,10 @@ describe('tennis', () => {
 		tennis.secondPlayerWinPoint();
 		expect(tennis.gameScore()).toEqual("love - fifteen");
 	});
+	it('should allow player 1 to win two point', () => {
+		let tennis = new Tennis();
+		tennis.firstPlayerWinPoint();
+		tennis.firstPlayerWinPoint();
+		expect(tennis.gameScore()).toEqual("thirty - love");
+	});
 });
