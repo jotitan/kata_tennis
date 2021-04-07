@@ -3,7 +3,9 @@ class Tennis {
 	scorePlayer2:number = 0;
 		
 	public gameScore(){
-		
+		if (this.scorePlayer1 === this.scorePlayer1 && this.scorePlayer1 >= 3) {
+			return "deuce"
+		}
 		return `${this.formatScore(this.scorePlayer1)} - ${this.formatScore(this.scorePlayer2)}`;
 	}
 	
