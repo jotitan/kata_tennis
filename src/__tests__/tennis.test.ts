@@ -22,4 +22,15 @@ describe('tennis', () => {
 		tennis.firstPlayerWinPoint();
 		expect(tennis.gameScore()).toEqual("thirty - love");
 	});
+	
+	it('should have deuce', () => {
+		let tennis = new Tennis();
+		tennis.firstPlayerWinPoint();
+		tennis.firstPlayerWinPoint();
+		tennis.firstPlayerWinPoint();
+		tennis.secondPlayerWinPoint();
+		tennis.secondPlayerWinPoint();
+		tennis.secondPlayerWinPoint();
+		expect(tennis.gameScore()).toEqual("deuce");
+	});
 });

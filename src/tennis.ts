@@ -11,6 +11,7 @@ class Tennis {
 		switch(value){
 			case 0 : return "love";
 			case 1 : return "fifteen";
+			case 2 : return "thirty";
 		}
 		return "";
 	}
